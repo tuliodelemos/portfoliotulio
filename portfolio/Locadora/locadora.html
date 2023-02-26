@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+	<script type="text/javascript" src="javascript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	<title>Locadora 2000</title>
+</head>
+<body>
+	<!--Menu Navbar-->
+	<nav class="navbar navbar-expand-lg bg-ligth">
+		<div class="container-fluid">
+			<img style="width: 3%" src="img/claquete.png">
+			<a class="navbar-brand" href="#topo"> Locadora 2000</a>
+			<!--Div com itens clicáveis-->
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#tabFilmes">Filmes Disponíveis</a>					
+					</li>
+
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="dropGeneros" role="button" href="#drop" data-bs-toggle="dropdown">Filmes por Categoria</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<li><a class="dropdown-item" href="#gAcao">Ação</a></li>
+							<li><a class="dropdown-item" href="#gAnim">Animação</a></li>
+							<li><a class="dropdown-item" href="#gRom">Romance</a></li>
+							<li><a class="dropdown-item" href="#gSus">Suspense</a></li>
+							<li><a class="dropdown-item" href="#gDrama">Drama</a></li>
+							<li><a class="dropdown-item" href="#gCom">Comédia</a></li>
+						</ul>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="#cadFilmes">Cadastrar Filme</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<h1 class="display-1 text-center mb-5">Locadora 2000</h1>
+
+	<div class="container">
+		<table class="table table-striped table-hover">
+			<thead>
+				<tr>
+					<!--<th scope="col">img</th>-->
+					<th scope="col">Código</th>
+					<th scope="col">Título</th>
+					<th scope="col">Diretor</th>
+					<th scope="col">Lançamento</th>
+					<th scope="col">Gênero</th>
+					<th scope="col">Atriz/Ator Principal</th>
+					<th scope="col">Nota IMDb</th>
+				</tr>
+			</thead>
+			<tbody>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAcao">Ação</th>
+				</tr>
+				<tr>
+					<th scope="row">1</th>
+					<td>Batman: O Cavaleiro das Trevas</td>
+					<td>Christopher Nolan</td>
+					<td>18 de julho de 2008</td>
+					<td>Ação</td>
+					<td>Christian Bale</td>
+					<td>9,0/10</td>
+				</tr>
+				<tr>
+					<th scope="row">2</th>
+					<td>O Império Contra-Ataca</td>
+					<td>Irvin Kershner</td>
+					<td>21 de julho de 1980</td>
+					<td>Ação</td>
+					<td>Mark Hamill</td>
+					<td>8,7/10</td>
+				</tr>
+				<tr>
+					<th scope="row">3</th>
+					<td>Matrix</td>
+					<td>Lana Wachowski, Lilly Wachowski</td>
+					<td>21 de maio de 1999</td>
+					<td>Ação</td>
+					<td>Keanu Reeves</td>
+					<td>8,7/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gAnim">Animação</th>
+				</tr>
+				<tr>
+					<th scope="row">4</th>
+					<td>A viagem de Chihiro</td>
+					<td>Hayao Miyazaki</td>
+					<td>18 de julho de 2003</td>
+					<td>Animação</td>
+					<td>Rumi Hiiragi (voz)</td>
+					<td>8,6/10</td>
+				</tr>
+				<tr>
+					<th scope="row">5</th>
+					<td>O Rei Leão</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>08 de julho de 1994</td>
+					<td>Animação</td>
+					<td>James Earl Jones (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+				<tr>
+					<th scope="row">6</th>
+					<td>Túmulo dos Vagalumes</td>
+					<td>Isao Takahata</td>
+					<td>24 de novembro de 1989</td>
+					<td>Animação</td>
+					<td>Tsutomu Tatsumi (voz)</td>
+					<td>8,5/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gRom">Romance</th>
+				</tr>
+				<tr>
+					<th scope="row">7</th>
+					<td>Dirty Dancing: Ritmo Quente</td>
+					<td>Emile Ardolino</td>
+					<td>25 de setembro de 1987</td>
+					<td>Romance</td>
+					<td>Jennifer Grey, Patrick Swayze</td>
+					<td>7,0/10</td>
+				</tr>
+				<tr>
+					<th scope="row">8</th>
+					<td>Ghost: Do Outro Lado da Vida</td>
+					<td>Rob Minkoff, Roger Allers</td>
+					<td>08 de julho de 1994</td>
+					<td>Romance</td>
+					<td>Demi Moore, Patrick Swayze</td>
+					<td>7,1/10</td>
+				</tr>
+				<tr>
+					<th scope="row">9</th>
+					<td>Amor a Segunda Vista</td>
+					<td>Marc Lawrence</td>
+					<td>12 de dezembro de 2002</td>
+					<td>Romance</td>
+					<td>Sandra Bullock</td>
+					<td>6,1/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gSus">Suspense</th>
+				</tr>
+				<tr>
+					<th scope="row">10</th>
+					<td>Cidade de Deus</td>
+					<td>Fernando Meirelles, Kátia Lund</td>
+					<td>30 de agosto de 2002</td>
+					<td>Suspense</td>
+					<td>Alexandre Rodrigues</td>
+					<td>8,6/10</td>
+				</tr>
+				<tr>
+					<th scope="row">11</th>
+					<td>Garota Exemplar</td>
+					<td>David Fincher</td>
+					<td>02 de outubro de 2014</td>
+					<td>Suspense</td>
+					<td>Rosamund Pike</td>
+					<td>8,1/10</td>
+				</tr>
+				<tr>
+					<th scope="row">12</th>
+					<td>Corra!</td>
+					<td>Jordan Peele</td>
+					<td>18 de maio de 2017</td>
+					<td>Suspense</td>
+					<td>Daniel Kaluuya</td>
+					<td>8,6/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gDrama">Drama</th>
+				</tr>
+				<tr>
+					<th scope="row">13</th>
+					<td>Um Sonho de Liberdade</td>
+					<td>Frank Darabont</td>
+					<td>17 de março de 1995</td>
+					<td>Drama</td>
+					<td>Morgan Freeman</td>
+					<td>9,3/10</td>
+				</tr>
+				<tr>
+					<th scope="row">14</th>
+					<td>O poderoso Chefão</td>
+					<td>Francis Ford Coppola</td>
+					<td>07 de julho de 1972</td>
+					<td>Drama</td>
+					<td>Al Pacino</td>
+					<td>9,2/10</td>
+				</tr>
+				<tr>
+					<th scope="row">15</th>
+					<td>Steven Spielberg</td>
+					<td>Jordan Peele</td>
+					<td>31 de dezembro de 1993</td>
+					<td>Drama</td>
+					<td>Liam Neeson</td>
+					<td>9,0/10</td>
+				</tr>
+
+				<tr>
+					<th class="text-center table-primary" colspan="7" id="#gCom">Comédia</th>
+				</tr>
+				<tr>
+					<th scope="row">16</th>
+					<td>Pulp Fiction: Tempo de Violência</td>
+					<td>Quetin Tarantino</td>
+					<td>18 de fevereiro de 1995</td>
+					<td>Comédia</td>
+					<td>John Travolta</td>
+					<td>8,9/10</td>
+				</tr>
+				<tr>
+					<th scope="row">17</th>
+					<td>Apertem os Cintos, o Piloto Sumiu</td>
+					<td>Jim Abrahams, David Zucker, Jerry Zucker</td>
+					<td>26 de dezembro de 1980</td>
+					<td>Comédia</td>
+					<td>Robert Hays</td>
+					<td>7,7/10</td>
+				</tr>
+				<tr>
+					<th scope="row">18</th>
+					<td>Os Caça-Fantasmas</td>
+					<td>Ivan Reitman</td>
+					<td>20 de dezembro de 1984</td>
+					<td>Comédia</td>
+					<td>Bill Murray</td>
+					<td>7,8/10</td>
+				</tr>
+				<tr id="inserirTabela">
+					
+				</tr>
+			</tbody>
+		</table>		
+	</div>
+
+	<!--Divisor de Página-->
+	<div class="m-5">
+		<hr class="border-primary border-3 opacity-75">
+	</div>
+
+	<h1 class="display-4 text-center mb-5">Cadastro de Filmes</h1>
+
+	<div class="container mb-5">
+		<form name="cadastrar" onsubmit="event.preventDefault()">
+			<!--Linha do código e data de lançamento-->
+			<div class="row">
+				<!--Coluna do código-->
+				<div class="mb-3 col">
+					<label for="codFilme" class="form-label">Código: </label>
+					<input type="text" id="codFilme" class="form-control" name="codigo" required>
+				</div>
+
+				<!--Coluna da data de lançamento-->
+				<div class="mb-3 col">
+					<label for="anoFilme" class="form-label">Data de Lançamento: </label>
+					<input type="date" id="anoFilme" class="form-control" name="data" required>
+				</div>
+			</div>
+
+			<!--Linha do título e diretor-->
+			<div class="row">
+				<!--Coluna do título-->
+				<div class="mb-3 col">
+					<label for="titFilme" class="form-label">Título: </label>
+					<input type="text" id="titFilme" class="form-control" name="titulo" required>
+				</div>
+
+				<!--Coluna do diretor-->
+				<div class="mb-3 col">
+					<label for="dirFilme" class="form-label">Diretor: </label>
+					<input type="text" id="dirFilme" class="form-control" name="diretor" required>
+				</div>				
+			</div>
+
+			<!--Linha do Ator/Atriz Principal e Nota IMDb-->
+			<div class="row">
+				<!--Coluna do Ator/Atriz Principal-->
+				<div class="mb-3 col">
+					<label for="atPrinFilme" class="form-label">Ator/Atriz Principal: </label>
+					<input type="text" id="atPrinFilme" class="form-control" name="ator" required>
+				</div>
+
+				<!--Coluna da Nota IMDb-->
+				<div class="mb-3 col">
+					<label for="notaFilme" class="form-label">Nota IMDb: </label>
+					<input type="number" placeholder="0,0" id="notaFilme" max="10" min="0" step="0.1" class="form-control" name="nota" required>
+				</div>				
+			</div>
+
+			<!--Linha dos gêneros-->
+			<div class="row">
+				<div class="mb-3 col form-check">
+					<input type="radio" name="radio" id="radGenAcao" class="form-check-input" value="Ação" required>
+					<label for="radGenAcao" class="form-label">Ação</label><br>
+					
+					<input type="radio" name="radio" id="radGenAnim" class="form-check-input" value="Animação" required>
+					<label for="radGenAnim" class="form-label">Animação</label><br>
+					
+					<input type="radio" name="radio" id="radGenRom" class="form-check-input" value="Romance" required>
+					<label for="radGenRom" class="form-label">Romance</label><br>
+					
+					<input type="radio" name="radio" id="radGenSus" class="form-check-input" value="Suspense" required>
+					<label for="radGenSus" class="form-label">Suspense</label><br>
+					
+					<input type="radio" name="radio" id="radGenCom" class="form-check-input" value="Comédia" required>
+					<label for="radGenCom" class="form-label">Comédia</label><br>
+					
+					<input type="radio" name="radio" id="radGenDrama" class="form-check-input" value="Drama" required>
+					<label for="radGenDrama" class="form-label">Drama</label><br>
+				</div>
+			</div>
+
+			<!--Botão enviar-->
+			<div class="col-auto">
+				<button type="submit" class="btn btn-primary mb-3" onclick="insere()" >Cadastrar Filme</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>
